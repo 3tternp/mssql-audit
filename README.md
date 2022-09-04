@@ -2,4 +2,7 @@
 
 run the script in sql query 
 
-PS C:\PS-Scripts>.\Get-SQLSecurityReview -computer ServerName -instance ServerName\SQLInstance -report C:\temp\ServerName$SQLInstance-Security_Review.html
+PS C:> Set-ExecutionPolicy RemoteSigned
+PS C:> Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+PS C:> .\mssql_audit.ps1
+
